@@ -1,0 +1,197 @@
+/* Establece el estilo para el cuerpo del documento HTML */
+body {
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    background-color: #4177aa; /* Cambia el color de fondo a gris oscuro */
+}
+
+/* Utiliza flexbox para centrar verticalmente los elementos hijos */
+.titleWithImage {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Establece el estilo para un título */
+.title {
+    flex: 1; /* Hace que el título ocupe todo el espacio restante */
+    font-size: 24px; /* Establece el tamaño de fuente en 24px */
+}
+
+/* Establece el tamaño de una imagen que se usa como logo */
+.logo {
+    width: 150px; /* Ancho de la imagen */
+    height: 160px; /* Alto de la imagen */
+}
+
+/* Establece el estilo para un contenedor que usa flexbox */
+.container {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos equitativamente alrededor del eje principal */
+}
+
+/* Establece el estilo para un contenedor que se utiliza para el formulario */
+.containerform {
+    margin: 0 auto; /* Centra horizontalmente */
+    width: 10%; /* Ancho del contenedor */
+    height: 100vh; /* Altura del contenedor */
+}
+
+
+/* Establece el estilo para un contenedor que utiliza flexbox */
+.flex {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+
+/* Establece el estilo para un elemento de información */
+.info {
+    margin-top: 3vh; /* Margen superior */
+    margin-left: 10vh; /* Margen izquierdo */
+    width: 100vh; /* Ancho del elemento */
+    height: 68vh; /* Altura del elemento */
+    color: rgb(0, 0, 0); /* Color de texto */
+    border-radius: 50vh; /* Borde redondeado */
+    background-color: #ffffff; /* Color de fondo */
+}
+
+/* Define el estilo para el contenido de un elemento de información */
+.info::content {
+    visibility: visible; /* Hace que el contenido sea visible */
+}
+
+/* Establece el estilo para un título de tamaño grande */
+.curp {
+    font-size: large; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Centrado horizontal */
+    margin-top: 7vh; /* Margen superior */
+}
+
+/* Establece el estilo para una etiqueta de formulario */
+.formLabel {
+    justify-content: center; /* Centra horizontalmente */
+    margin: 10vh; /* Margen */
+}
+
+/* Establece el estilo para un formulario */
+.form {
+    position: fixed; /* Fija la posición */
+    top: 50%; /* Centra verticalmente */
+    right: 10%; /* Alinea a la derecha */
+    transform: translateY(-50%); /* Centra verticalmente */
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* Ancho deseado */
+    max-width: 600px; /* Ancho máximo */
+    height: auto; /* Altura automática */
+    border-radius: 60px; /* Borde redondeado */
+    color: #ffffff; /* Color de texto */
+    background-color: #0a135a; /* Color de fondo */
+    padding: 25px; /* Espaciado interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Establece el estilo para un título grande */
+.title {
+    font-size: 45px; /* Tamaño de fuente grande */
+    font-weight: 500; /* Texto en negrita */
+    margin-bottom: 46px; /* Margen inferior */
+    margin-top: 5vh; /* Margen superior */
+    position: relative; /* Posición relativa */
+    display: flex;
+    align-items: left; /* Centra verticalmente */
+    padding-left: 0px; /* Espaciado izquierdo */
+    color: #ffffff; /* Color de texto */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Establece el estilo para un pseudo-elemento antes del título */
+.title::before {
+    width: 20px; /* Ancho */
+    height: 100px; /* Alto */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Establece el estilo para un pseudo-elemento después del título */
+.title::after {
+    width: 100px; /* Ancho */
+    height: 100px; /* Alto */
+    animation: pulse 25s linear infinite; /* Animación */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Establece la posición y el estilo para los pseudo-elementos */
+.title::before,
+.title::after {
+    position: absolute; /* Posición absoluta */
+    content: ""; /* Contenido vacío */
+    height: 0px; /* Alto */
+    width: 0px; /* Ancho */
+    border-radius: 50%; /* Borde redondeado */
+    left: 0px; /* Alineación a la izquierda */
+    background-color: #080cc9; /* Color de fondo */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Establece el estilo para un cuadro de entrada de texto */
+.input {
+    margin: 0 auto 5vh; /* Centra horizontalmente y agrega margen inferior */
+    width: 200px; /* Ancho deseado */
+    height: 30px; /* Alto deseado */
+    text-align: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    color: white; /* Color del texto */
+
+    /* Establece el color de fondo al enfocar */
+    &::-webkit-datetime-edit-day-field:focus {
+        background-color: #1299f3;
+    }
+    &::-webkit-datetime-edit-month-field:focus {
+        background-color: rgb(7, 12, 74);
+    }
+}
+
+
+
+/* Establece el estilo para un contenedor flexible con espacio entre los elementos */
+.flexdate {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    height: 80px; /* Altura */
+    width: 50px; /* Ancho */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Establece el estilo para un botón */
+.generation {
+    background-color: #18219e; /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Borde redondeado */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cursor de puntero */
+    margin-bottom: 1VH; /* Margen inferior */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Establece el estilo para un botón al pasar el cursor sobre él */
+.generation:hover{
+    opacity: 2; /* Opacidad al 80% */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Establece el estilo para un contenedor flexible con dirección de columna */
+.generationQR {
+    flex-direction: column; /* Dirección de columna */
+    background-color: #18219e; /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 150px; /* Borde redondeado */
+    padding: 20px 80px; /* Espaciado interno */
+    cursor: pointer; /* Cursor de puntero */
+    margin-bottom: 5VH; /* Margen inferior */
+    align-items: center; /* Centra verticalmente */
+}
